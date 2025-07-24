@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import {ProtectedRoute} from "./components/protectedRoute";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import DeleteAccount from "./pages/DeleteAccount";
 function App() {
   return (
     <Router>
@@ -10,6 +12,18 @@ function App() {
           path="/"
           element={
               <Login />
+          }
+        />
+         <Route
+          path="/privacyPolicy"
+          element={
+              <PrivacyPolicy />
+          }
+        />
+        <Route
+          path="/deleteAccount"
+          element={
+              <DeleteAccount />
           }
         />
         <Route
