@@ -20,12 +20,12 @@ const Sidebar = ({ onClose }) => {
   const navItems = [
     {
       title: "Dashboard",
-      to: "/dashboard",
+      to: "/admin/dashboard",
       icon: <Home className="mr-2 h-4 w-4" />,
     },
     {
       title: "Users",
-      to: "/dashboard/users",
+      to: "/admin/dashboard/users",
       icon: <Users className="mr-2 h-4 w-4" />,
     },
     // {
@@ -40,7 +40,7 @@ const Sidebar = ({ onClose }) => {
     // },
     {
       title: "Settings",
-      to: "/dashboard/settings",
+      to: "/admin/dashboard/settings",
       icon: <Settings className="mr-2 h-4 w-4" />,
     },
   ];
